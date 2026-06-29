@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Johanna ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:linear-gradient(180deg,#06061b,#130a34,#220d45);
+overflow-x:hidden;
+font-family:Poppins,sans-serif;
+color:white;
+min-height:100vh;
+
+}
+
+canvas{
+
+position:fixed;
+top:0;
+left:0;
+z-index:-2;
+
+}
+
+.stars{
+
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+
+}
+
+.star{
+
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 3s infinite alternate;
+
+}
+
+@keyframes twinkle{
+
+from{opacity:.2;}
+to{opacity:1;}
+
+}
+
+.container{
+
+width:90%;
+max-width:850px;
+margin:auto;
+padding-top:70px;
+text-align:center;
+
+}
+
+h1{
+
+font-family:"Great Vibes";
+font-size:72px;
+margin-bottom:20px;
+color:#ffb8d5;
+
+}
+
+.subtitle{
+
+font-size:20px;
+opacity:.9;
+margin-bottom:50px;
+
+}
+
+.letter{
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:25px;
+line-height:2;
+font-size:19px;
+box-shadow:0 0 30px rgba(255,255,255,.1);
+
+}
+
+#typed{
+
+white-space:pre-line;
+
+}
+
+.buttons{
+
+margin-top:45px;
+
+}
+
+button{
+
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+transition:.3s;
+margin:15px;
+
+}
+
+#yes{
+
+background:#ff4d8d;
+color:white;
+
+}
+
+#yes:hover{
+
+transform:scale(1.08);
+
+}
+
+#no{
+
+background:white;
+color:#ff4d8d;
+position:relative;
+
+}
+
+.final{
+
+display:none;
+margin-top:60px;
+animation:fade 2s;
+
+}
+
+.final h2{
+
+font-size:50px;
+margin-bottom:15px;
+font-family:"Great Vibes";
+
+}
+
+.final p{
+
+font-size:22px;
+line-height:1.8;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.heart{
+
+position:fixed;
+font-size:20px;
+animation:float 8s linear infinite;
+opacity:.8;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(100vh) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+}
+
+}
+
+footer{
+
+margin:70px 0 30px;
+opacity:.7;
+font-size:15px;
+
+}
+
+@media(max-width:700px){
+
+h1{
+
+font-size:50px;
+
+}
+
+.letter{
+
+font-size:17px;
+
+}
+
+.final h2{
+
+font-size:40px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div class="stars" id="stars"></div>
+
+<div class="container">
+
+<h1>For Johanna ❤️</h1>
+
+<div class="subtitle">
+
+Distance may separate us...
+but never our hearts.
+
+</div>
+
+<div class="letter">
+
+<p id="typed"></p>
+
+</div>
+
+<div class="buttons">
+
+<button id="yes">
+Yes, I forgive you ❤️
+</button>
+
+<button id="no">
+I'm still mad 😤
+</button>
+
+</div>
+
+<div class="final" id="final">
+
+<h2>Thank You ❤️</h2>
+
+<p>
+
+I promise...
+
+The next hug will be worth every mile.
+
+I love you more than words,
+more than distance,
+and more than every missed weekend.
+
+Forever yours,
+
+❤️
+
+</p>
+
+</div>
+
+<footer>
+
+Made with all my love for Johanna ❤️
+
+</footer>
+
+</div>
+</script>
+</body>
+</html>
