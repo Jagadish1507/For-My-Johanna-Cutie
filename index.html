@@ -310,6 +310,119 @@ Made with all my love for Johanna ❤️
 </footer>
 
 </div>
+<script>
+
+const text = `Hi my beautiful Johanna ❤️
+
+I know you're upset...
+
+And honestly, you have every reason to be.
+
+I promised I'd come see you this weekend.
+
+I know how much that meant to us.
+
+I was looking forward to it too.
+
+But work became overwhelming and I couldn't make it happen.
+
+That doesn't mean you're not important.
+
+It means life got in the way of something I wanted more than anything.
+
+If I could choose between work and being with you...
+
+I'd choose you.
+
+Every single time.
+
+Long distance is already hard enough.
+
+The last thing I ever want is to disappoint you.
+
+So I'm truly sorry.
+
+I miss you.
+
+I love you.
+
+And I promise I'll make it up to you.
+
+❤️
+
+Love,
+Jaga`;
+
+let i = 0;
+
+function typeWriter(){
+if(i < text.length){
+document.getElementById("typed").innerHTML += text.charAt(i);
+i++;
+setTimeout(typeWriter,35);
+}
+}
+
+typeWriter();
+
+const noBtn = document.getElementById("no");
+
+noBtn.addEventListener("mouseover",()=>{
+
+const x = Math.random() * (window.innerWidth - 150);
+
+const y = Math.random() * (window.innerHeight - 80);
+
+noBtn.style.position = "fixed";
+noBtn.style.left = x + "px";
+noBtn.style.top = y + "px";
+
+});
+
+document.getElementById("yes").addEventListener("click",()=>{
+
+document.getElementById("final").style.display="block";
+
+for(let i=0;i<60;i++){
+
+const heart=document.createElement("div");
+
+heart.innerHTML="❤️";
+
+heart.classList.add("heart");
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(Math.random()*4+4)+"s";
+
+document.body.appendChild(heart);
+
+}
+
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:"smooth"
+});
+
+});
+
+for(let i=0;i<120;i++){
+
+const star=document.createElement("div");
+
+star.classList.add("star");
+
+star.style.left=Math.random()*100+"%";
+
+star.style.top=Math.random()*100+"%";
+
+star.style.animationDelay=Math.random()*3+"s";
+
+document.getElementById("stars").appendChild(star);
+
+}
+
 </script>
 </body>
 </html>
